@@ -14,7 +14,6 @@ import {
   useMediaQuery
 } from '@material-ui/core';
 // routes
-import { PATH_HOME } from '../../routes/paths';
 //
 import { varFadeInUp, MotionInView, varFadeInRight } from '../animate';
 
@@ -125,7 +124,7 @@ export default function LandingHugePackElements() {
                   color="inherit"
                   variant="outlined"
                   component={RouterLink}
-                  to={PATH_HOME.components}
+                  to="/"
                 >
                   View All Components
                 </Button>

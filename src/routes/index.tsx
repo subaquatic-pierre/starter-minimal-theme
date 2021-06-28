@@ -153,11 +153,6 @@ const routes: RouteItem[] = [
   },
   {
     exact: true,
-    path: PATH_PAGE.comingSoon,
-    component: lazy(() => import('../views/ComingSoon'))
-  },
-  {
-    exact: true,
     path: PATH_PAGE.maintenance,
     component: lazy(() => import('../views/Maintenance'))
   },

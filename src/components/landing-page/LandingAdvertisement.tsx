@@ -2,7 +2,6 @@
 import { experimentalStyled as styled } from '@material-ui/core/styles';
 import { Button, Box, Container, Typography } from '@material-ui/core';
 // routes
-import { PATH_HOME } from '../../routes/paths';
 //
 import { varFadeInDown, varFadeInUp, MotionInView } from '../animate';
 
@@ -71,7 +70,7 @@ export default function LandingAdvertisement() {
               size="large"
               variant="contained"
               target="_blank"
-              href={PATH_HOME.purchase}
+              href="/"
               sx={{
                 boxShadow: (theme) => theme.customShadows.z8,
                 color: (theme) =>

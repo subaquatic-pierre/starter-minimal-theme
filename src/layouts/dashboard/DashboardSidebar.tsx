@@ -6,7 +6,6 @@ import {
   Box,
   Link,
   List,
-  Button,
   Drawer,
   Hidden,
   Typography,
@@ -15,7 +14,7 @@ import {
 // hooks
 import useAuth from '../../hooks/useAuth';
 // routes
-import { PATH_DASHBOARD, PATH_DOCS } from '../../routes/paths';
+import { PATH_DASHBOARD } from '../../routes/paths';
 // components
 import Logo from '../../components/Logo';
 import MyAvatar from '../../components/MyAvatar';
@@ -218,18 +217,6 @@ export default function DashboardSidebar({
           >
             Hi, {user.displayName}
           </Typography>
-          <Typography variant="body2" sx={{ mb: 2, color: 'grey.600' }}>
-            Need help?
-            <br /> Please check our docs
-          </Typography>
-          <Button
-            fullWidth
-            to={PATH_DOCS.root}
-            variant="contained"
-            component={RouterLink}
-          >
-            Documentation
-          </Button>
         </DocStyle>
       </Box>
     </Scrollbar>
